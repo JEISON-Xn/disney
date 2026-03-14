@@ -1,0 +1,106 @@
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(#0b2a5b,#02122b);
+color:white;
+}
+
+header{
+display:flex;
+align-items:center;
+padding:20px;
+background:#061c3a;
+}
+.menu{
+display:flex;
+align-items:center;
+background:#0a2a5c;
+color:white;
+padding:12px 5px;
+}
+
+.logo img{
+font-size:3px;
+font-weight:bold;
+margin-right:0px;
+
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.perfil{
+margin-left:auto;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-right:45px;
+font-size:10px;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.categorias{
+display:flex;
+gap:40px;
+padding:30px;
+}
+
+.categorias img{
+width:178px;
+border-radius:40px;
+}
+
+h2{
+padding-left:60px;
+}
+
+.peliculas{
+display:flex;
+gap:30px;
+padding:50px;
+}
+
+.peliculas img:hover{
+transform:scale(1.1);
+}
+
+#buscar{
+margin-left:20px;
+padding:5px;
+border-radius:10px;
+border:none;
+}
+
+.perfil{
+margin-left:auto;
+font-size:14px;
+}
+
+.play{
+position:absolute;
+top:40%;
+left:45%;
+font-size:40px;
+opacity:0;
+transition:0.3s;
+}
+
+.card:hover .play{
+opacity:1;
+}
+.peliculas img{
+width:220px;
+height:290px;
+object-fit:cover;
+border-radius:20px;
+transition:0.3s;
+}

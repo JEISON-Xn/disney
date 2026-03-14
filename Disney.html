@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Disney+</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+<header class="menu"></header>
+<div class="logo">Disney+</div>
+<input type="text" id="buscar" placeholder="Buscar película...">
+
+<nav>
+
+<a href="#">🏠 INICIO</a>
+<a href="#">🔍 BÚSQUEDA</a>
+<a href="#">➕ MI LISTA</a>
+<a href="#">⭐ ORIGINALES</a>
+<a href="peliculas.html" class="boton-link">🎬 Películas</a>
+<a href="series.html" class="boton-link">📺 Series</a>
+
+</nav>
+
+
+<div class="perfil"> JEISON 👤</div>
+
+</header>
+
+<section class="categorias">
+
+<img src="imagenes/el reino de los elfos.jpg">
+<img src="imagenes/el-niño-androide.jpg">
+<img src="imagenes/la_era_de_hielo_2.jpg">
+<img src="imagenes/Pajaritos_a_volar_Poster.webp">
+<img src="imagenes/doraenon_.jpg">
+<img src="imagenes/la aventura continua.jpg">
+
+</section>
+
+<h2>En primer plano</h2>
+
+<section class="peliculas">
+
+<a href="elfos.html">
+<img src="imagenes/el reino de los elfos.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="Androide.html">
+<img src="imagenes/el-niño-androide.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="La era 2.html">
+<img src="imagenes/la_era_de_hielo_2.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="Pajaros.html">
+<img src="imagenes/Pajaritos_a_volar_Poster.webp">
+<div class="play">▶</div>
+</a>
+
+<a href="doraemon.html">
+<img src="imagenes/doraenon_.jpg">
+<div class="play">▶</div>
+</a>
+
+</section>
+
+<h2>Series de Disney Channel</h2>
+
+<section class="peliculas">
+
+<a href="El chavo del 8.html">
+<img src="imagenes/El-Chavo-del-8.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="malcon.html">
+<img src="imagenes/malcon.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="witcher.html">
+<img src="imagenes/witcher.jpg">
+<div class="play">▶</div>
+</a>
+
+<a href="WRONG_TURN_4.html">
+<img src="imagenes/WRONG_TURN_4.webp">
+<div class="play">▶</div>
+</a>
+
+<a href="icamino hacia el teror.html">
+<img src="imagenes/icamino hacia el teror.jpg">
+<div class="play">▶</div>
+</a>
+
+</section>
+<script>
+
+function buscar(){
+
+let input = document.getElementById("buscar").value.toLowerCase();
+
+let peliculas = document.querySelectorAll(".card");
+
+peliculas.forEach(function(card){
+
+let texto = card.innerText.toLowerCase();
+
+if(texto.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
+<ul>
+    <li><a href="https://youtube.com "target="_blank">youtube</a></li>
+    <li><a href="https://google.com "target="_blank">google</a></li>
+    <li><a href="https://facebook.com "target="_blank">Facebook</a></li>
+</ul>
+
+</body>
+</html>
